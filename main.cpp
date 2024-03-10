@@ -5,24 +5,23 @@
 /**
  * The main function of the program.
  */
-int main()
+int main ()
 {
   triangle t;
 
-  t.set_angle_A(90);
-  t.set_angle_B(30);
-  t.set_angle_C(60);
+  t.set_angle_A (90);
+  t.set_angle_B (30);
+  t.set_angle_C (60);
 
-  bool valid = t.isTriangle();
+  bool valid = t.isTriangle ();
   if (!valid)
   {
-    std::cout << "Invalid triangle" << std::endl;
-  }
+      std::cout << "Invalid triangle" << std::endl;
+    }
   else
-  {
-    std::cout << "Valid triangle" << std::endl;
-  }
+    {
+      std::cout << "Valid triangle" << std::endl;
+    }
 
   return 0;
 }
-

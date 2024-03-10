@@ -1,11 +1,18 @@
 #include <iostream>
 
+#include "triangle.hpp"
+
+/**
+ * The main function of the program.
+ */
 int main()
 {
-  char a[10];
-  a[10] = 0;
+  triangle t;
 
+  t.set_angle_A(90);
+  t.set_angle_B(30);
+  t.set_angle_C(60);
 
-  std::cout << "Hello" << std::endl;
+  std::cout << "Is the triangle valid? " << t.isTriangle() << std::endl;
 }
 

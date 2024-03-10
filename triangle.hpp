@@ -22,7 +22,7 @@ public:
     void set_angle_C(double);
 
     //isTriangle
-    bool isTriangle();
+    bool isTriangle() const;
 };
 
 

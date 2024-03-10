@@ -128,18 +128,10 @@ void triangle::set_angle_C(double aAngle_C)
 }
 
 /**
- * Check if the sides of the triangle form a valid triangle.
- * @return true if the sides form a valid triangle, false otherwise
+ * Check if the angles form a valid triangle.
+ * @return true if the angles form a valid triangle, false otherwise
  */
-bool triangle::isTriangle()
+bool triangle::isTriangle() const
 {
-    double sum = angle_A + angle_B + angle_C;
-    bool result = false;
-
-    if (sum == 180)
-    {
-        result = true;
-    }
-
-    return result;
+    return (angle_A + angle_B + angle_C == 180);
 }

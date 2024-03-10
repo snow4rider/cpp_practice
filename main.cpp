@@ -13,6 +13,16 @@ int main()
   t.set_angle_B(30);
   t.set_angle_C(60);
 
-  std::cout << "Is the triangle valid? " << t.isTriangle() << std::endl;
+  bool valid = t.isTriangle();
+  if (!valid)
+  {
+    std::cout << "Invalid triangle" << std::endl;
+  }
+  else
+  {
+    std::cout << "Valid triangle" << std::endl;
+  }
+
+  return 0;
 }
 

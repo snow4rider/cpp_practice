@@ -133,7 +133,7 @@ void triangle::set_angle_C(double aAngle_C)
  */
 bool triangle::isTriangle()
 {
-    double sum = side_a + side_b + side_c;
+    double sum = angle_A + angle_B + angle_C;
     bool result = false;
 
     if (sum == 180)

@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/Users/matthew/Desktop/cpp_practice/shapes_prac/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -o CMakeFiles/Shapes.dir/main.cpp.o -c /Users/matthew/Desktop/cpp_practice/shapes_prac/main.cpp",
+  "file": "/Users/matthew/Desktop/cpp_practice/shapes_prac/main.cpp",
+  "output": "CMakeFiles/Shapes.dir/main.cpp.o"
+}
+]

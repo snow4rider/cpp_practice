@@ -1,3 +1,5 @@
+// copyright 2024
+
 #include <cstdio>
 
 struct ClockOfTheLongNow {
@@ -20,10 +22,13 @@ private:
   int year;
 };
 
+void add_year(ClockOfTheLongNow &clock) {
+  clock.set_year(clock.get_year() + 1); // No deref operator needed
+}
+
 int main() {
   ClockOfTheLongNow clock;
-  ClockOfTheLongNow *clock_ptr = &clock;
-  clock_ptr->set_year(2020);
-  printf("Address of clock: %p\n", clock_ptr);
-  printf("Value of clock's year: %d", clock_ptr->get_year());
+  printf("The year is %d.\n", clock.get_year());
+  add_year(clock); // Clock is implicitly passed by reference!
+  printf("The year is %d.\n", clock.get_year());
 }

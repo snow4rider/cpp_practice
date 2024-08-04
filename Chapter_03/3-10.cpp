@@ -1,3 +1,4 @@
+// copyright 2024
 #include <cstdio>
 
 struct Element {
@@ -25,7 +26,7 @@ int main() {
   trooper3.operating_number = 005;
 
   for (Element *cursor = &trooper1; cursor; cursor = cursor->next) {
-    printf("Stormtrooper %c%c-%d\n", cursor->prefix[0], cursor->prefix[1],
+    printf("Storm Trooper %c%c-%d\n", cursor->prefix[0], cursor->prefix[1],
            cursor->operating_number);
   }
 }

@@ -1,5 +1,10 @@
 #include <cstdio>
 
+/**
+ * @brief Output whether a given number is positive, negative, or zero.
+ *
+ * @details This program prints out whether the number is positive, negative, or zero.
+ */
 int main(){
   int x = 0;
 

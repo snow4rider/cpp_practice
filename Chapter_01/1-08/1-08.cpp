@@ -1,5 +1,16 @@
 #include <cstdio>
 
+/**
+ * Computes the step function of a given integer.
+ * 
+ * The step function returns:
+ *  - -1 if the input is negative
+ *  -  1 if the input is positive
+ *  -  0 if the input is zero
+ *
+ * @param x the input integer value
+ * @returns the step value corresponding to the input
+ */
 int step_function(int x) {
   int result = 0;
 
@@ -11,6 +22,13 @@ int step_function(int x) {
   return result;
 }
 
+/**
+ * A simple test driver for the step_function.
+ *
+ * This program exercises the step_function by calling it with three
+ * different values, and prints the input and corresponding step value
+ * to the console.
+ */
 int main () {
   int num1 = 42;
   int result1 = step_function(num1);

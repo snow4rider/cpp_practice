@@ -1,3 +1,15 @@
+/**
+ * @brief Showcases the usage of relational operators.
+ *
+ * @details
+ * This function shows how to use the relational operators, including
+ * equality, inequality, greater than, greater than or equal to,
+ * less than, and less than or equal to.
+ *
+ * @note
+ * This function does not return anything, it is only used for
+ * demonstration purposes.
+ */
 int main(){
   int x = 0;
   42 == x; // Equality

@@ -2,11 +2,7 @@
 
 struct BaseClass
 {
-  virtual const char *
-  final_message () const
-  {
-    return "We apologise for the incontnence.";
-  }
+  virtual const char *final_message () const = 0;
 };
 
 struct DerivedClass : BaseClass
@@ -21,10 +17,9 @@ struct DerivedClass : BaseClass
 int
 main ()
 {
-  BaseClass base;
+  // BaseClass base; // Bang!
   DerivedClass derived;
   BaseClass &ref = derived;
-  printf ("BaseClass:    %s\n", base.final_message ());
   printf ("DerivedClass: %s\n", derived.final_message ());
   printf ("BaseClass&:   %s\n", ref.final_message ());
 }
